@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addCartThunk } from "../../store/modules/cart/thunk";
+import { addCartThunk } from "../../store/modules/cartProducts/thunk";
 import { StyledButton, StyledPaper } from "./style";
 
 const ProductCard = ({ product }) => {

@@ -7,6 +7,7 @@ import { StyledMain } from "./style";
 const ProductsList = () => {
   const products = useSelector((store) => store.products);
 
+
   return (
     <StyledMain>
       {products.map((product) => {

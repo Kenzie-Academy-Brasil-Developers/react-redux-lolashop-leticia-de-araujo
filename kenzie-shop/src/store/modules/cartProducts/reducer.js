@@ -1,9 +1,6 @@
 import { ADD_CART, REMOVE_CART } from "./actionsType";
 
-const cartReducer = (
-  state = JSON.parse(localStorage.getItem("cartProducts")) || [],
-  action
-) => {
+const cartProductsReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_CART:
       const { product } = action;
@@ -20,4 +17,6 @@ const cartReducer = (
   }
 };
 
-export default cartReducer;
+// state = JSON.parse(localStorage.getItem("cartProducts")) || []
+
+export default cartProductsReducer;

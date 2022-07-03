@@ -14,6 +14,7 @@ export const StyledBox = muiStyles.styled(Box)`
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-evenly;
     }
   
   
@@ -22,13 +23,14 @@ export const StyledBox = muiStyles.styled(Box)`
         border-radius: 0.25rem;
 
         @media (max-width: 500px) {
-            width: 6rem;
-            height: 6rem;
+            width: 7rem;
+            height: 7rem;
+
         }
     
     }
 
-    .CartProductCard-content {
+    .CartProductCard-name-description {
         width: 43%;
         display: flex;
         flex-direction: column;
@@ -38,6 +40,10 @@ export const StyledBox = muiStyles.styled(Box)`
         color: rgb(130, 130, 130);
         font-family: "Montserrat", sans-serif;
 
+        @media (max-width: 500px) {
+            align-items: center;
+        }
+
         h2 {
             font-size: 1rem;
             color: rgb(51, 51, 51);
@@ -45,9 +51,11 @@ export const StyledBox = muiStyles.styled(Box)`
             text-align: start;
 
             @media (max-width: 500px) {
+                font-size: 0.8rem;
                 text-align: center;
+                width: 6.25rem;
             }
-       
+
         }
       
         p {
@@ -66,29 +74,45 @@ export const StyledBox = muiStyles.styled(Box)`
     
     }
 
-    .CartProductCard-price {
-        width: 10rem;
-        height: 100%;
+    .CartProductCard-price-remove-qtd{
+        width: 8rem;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.7rem;
 
         @media (max-width: 800px) {
-            width: 5rem;
-            height: 60%;
+            gap: 0;
+            justify-content: space-evenly;
+            
+        }
+
+        @media (max-width: 500px) {
+            width: 4rem;
+            height: 70%;
+            gap: 0;
+            justify-content: space-evenly;
+            
         }
 
         
         .price {
-            color:  rgb(130, 130, 130);
+            color: #fe6d73;
             font-weight: 500;
             font-size: 0.9rem;
             
         }
+
+        .quantity {
+            color:  rgb(130, 130, 130);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
     }
 
+ 
     
 `;
 

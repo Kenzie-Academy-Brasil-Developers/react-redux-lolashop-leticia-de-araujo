@@ -9,7 +9,7 @@ export const StyledPaper = muiStyles.styled(Paper)`
   gap: 1rem;
   padding-bottom: 1rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
         width: 90vw;
         min-width: 220px;
     }

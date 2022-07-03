@@ -5,12 +5,12 @@ import {
 } from "redux";
 
 import thunk from "redux-thunk";
-import cartReducer from "./modules/cart/reducer";
+import cartProductsReducer from "./modules/cartProducts/reducer";
 import productsReducer from "./modules/products/reducer";
 
 const reducers = combineReducers({
   products: productsReducer,
-  cart: cartReducer,
+  cartProducts: cartProductsReducer,
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));

@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { StyledButton, StyledPaper } from "./style";
 
 const CartInfo = () => {
-  const cartProducts = useSelector((store) => store.cart);
+  const cartProducts = useSelector((store) => store.cartProducts);
 
   const calculateTotal = () => {
     const values = [];
