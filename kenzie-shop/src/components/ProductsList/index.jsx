@@ -7,13 +7,14 @@ import { StyledMain } from "./style";
 const ProductsList = () => {
   const products = useSelector((store) => store.products);
 
-
   return (
-    <StyledMain>
-      {products.map((product) => {
-        return <ProductCard key={uuidv4()} product={product} />;
-      })}
-    </StyledMain>
+    products && (
+      <StyledMain>
+        {products.map((product) => {
+          return <ProductCard key={uuidv4()} product={product} />;
+        })}
+      </StyledMain>
+    )
   );
 };
 
