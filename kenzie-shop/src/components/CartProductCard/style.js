@@ -24,7 +24,6 @@ export const StyledBox = muiStyles.styled(Box)`
 
         @media (max-width: 500px) {
             width: 7rem;
-            height: 7rem;
 
         }
     
