@@ -2,12 +2,6 @@ import { addCart, removeCart } from "./actions";
 
 export const addCartThunk = (product) => (dispatch) => {
 
-  // const list = JSON.parse(localStorage.getItem("cartProducts")) || [];
-
-  // list.push(product);
-
-  // localStorage.setItem("cartProducts", JSON.stringify(list));
-
   dispatch(addCart(product));
 };
 
@@ -27,13 +21,10 @@ export const removeCartThunk = (id) => (dispatch, getState) => {
 
     const list = [...cartProducts];
 
-    // localStorage.setItem("cartProducts", JSON.stringify(list));
 
     dispatch(removeCart(list));
   } else {
     const list = cartProducts.filter((product) => product.id !== id);
-
-    // localStorage.setItem("cartProducts", JSON.stringify(list));
 
     dispatch(removeCart(list));
   }
