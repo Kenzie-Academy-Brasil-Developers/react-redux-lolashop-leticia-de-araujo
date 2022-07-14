@@ -20,3 +20,5 @@ The layout was developed using the concept of mobile-first and responsiveness.
 App link: https://kenzie-shop-dun-eight.vercel.app/
 
 <img src="https://j.gifs.com/Z8oLqQ.gif" width=580 height=380/>
+
+This same project, but with Context-API is in this repository: https://github.com/Kenzie-Academy-Brasil-Developers/react-context-api-lolashop-leticia-de-araujo
